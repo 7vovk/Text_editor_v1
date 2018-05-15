@@ -1,0 +1,136 @@
+* {
+    text-decoration: none;
+}
+body {
+    background-image: url(img/background.png);
+}
+a {
+    color: black;
+    display: block;
+}
+.container {
+    width: 600px;
+    margin: 13px auto;
+    box-sizing: border-box;
+}
+.box {
+    width: 600px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.box2 {
+    height: 290px;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: auto;
+}
+
+.box p {
+    margin: 15px;
+}
+.top {
+    background-color: rgba(34, 139, 34, 0.5);
+    color: white;
+}
+.bottom {
+    background-color: rgba(100, 149, 237, 0.5);
+}
+.centerButtons {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons {
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 148px;
+    height: 25px;
+    text-align: center;
+    box-shadow: 0px 1px 3px 1px #03a6e9;
+    font-weight: bold;
+    margin: 0px 45px;
+}
+.hiddenForm {
+    visibility: hidden;
+    display: none;
+}
+.editText{
+    display: inline;
+}
+.styleForm {
+    margin: 35px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    display:none;
+}
+.styleFormBlock{
+    display: block;
+}
+.styleForm>p{
+    line-height: 10px;
+}
+.styleText {
+    background: black;
+}
+textarea {
+    width: 550px;
+    height: 185px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none;
+    margin: 20px 20px 5px;
+}
+#select {
+    background-color: rgba(31, 98, 218, 0.8);
+    color: #ffffff;
+    border-color: rgba(100, 149, 237, 0.5);
+}
+.bigBox {
+    height: 645px;
+    width: 600px;
+    padding: 18px;
+    box-sizing: border-box;
+    line-height: 40px;
+    color: #ffffff;
+}
+.bigBox h2, .bigBox h5 {
+    line-height: 0px;
+}
+.elementsStyle {
+    border-radius: 50px;
+    border-color: #3d6cab;
+    width: 90px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    padding-top: 40px;
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    border: 1px solid #053040;
+    background: rgba(60, 60, 60, 0.5);
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    height: 30px;
+    width: 8px;
+    border: 1px solid #053040;
+    background: rgb(111,111,111);
+    -webkit-box-shadow: 0 1px 1px rgb(0,0,0);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(102, 144, 162, 0.6));
+}
+
+::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
+}

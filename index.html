@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+       <div class="box top">
+            <div class="box2" id="text">
+               <p>Some text is written here</p>
+               <p>Some text is written here</p>
+               <p>Some text is written here</p>
+               <p>Some text is written here</p>
+               <p>Some text is written here</p>
+            </div>
+       </div>
+        <form name="centerBtns" class="centerButtons">
+           <input type="button" name="btnE" class="buttons" id="edit" value="Edit">
+           <input type="button" class="buttons" id="style" value="Style">
+       </form>
+       <div class="box bottom">
+           <form name="editForm" class="hiddenForm">
+              <textarea name="ta" class="editText" id="input"></textarea>
+              <input type="button" name="btnS" value="Save" class="saveBtn buttons">
+              <input type="button" name="btnA" value="Add" class="addBtn buttons">
+           </form>
+           <div>
+               <form name="styleForm" class="styleForm">
+                   <div id="textSize">Text size:
+                      |12pt <input type="radio" name="textSize" value="pt12" id="pt12" checked="true">| 
+                      14pt <input type="radio" name="textSize" value="pt14" id="pt14">| 
+                      16pt <input type="radio" name="textSize" value="pt16" id="pt16">| 
+                      18pt <input type="radio" name="textSize" value="pt18" id="pt18">| 
+                      20pt <input type="radio" name="textSize" value="pt20" id="pt20">| 
+                   </div>
+                   <div>Font:
+                       <select name="select" id="select">
+                           <option value="Times New Roman">Times New Roman</option>
+                           <option value="Arial">Arial</option>
+                           <option value="Courier">Courier</option>
+                           <option value="Cursive">Cursive</option>
+                           <option value="Monospace">Monospace</option>
+                       </select>
+                   </div>
+                   <div>
+                       Pick text color:
+                       <input type="color" id="textColor">
+                       Pick text background color:
+                       <input type="color" id="bgColor">
+                   </div>
+                   <p>
+                       Bold: <input type="checkbox" id="boldText" name="boldText">
+                       Italic: <input type="checkbox" id="italicText" name="italicText">
+                   </p>
+               </form>
+           </div>
+           <div class="hiddenForm">
+               <h2>Chose what you want to add:</h2>
+               <h5>( if lines,columns or elements are empty, it won't add anything )</h5>
+               <form name="">
+                  <div>
+                     <form name="tableOrList">
+                          <input type="radio" name="create" id="addTable" checked="checked"> Table 
+                          <input type="radio" name="create" id="addList" > List 
+                      </form>
+                  </div>
+                  <div class="table hiddenForm" id="table">
+                     <div>
+                         Enter amount of lines: <input type="number" class="elementsStyle" id="tableLines">
+                     </div>
+                     <div>
+                         Enter amount of columns: <input type="number" class="elementsStyle" id="tableColunms">
+                     </div>
+                     <h3>Style of your table:</h3>
+                     <div>
+                         Enter width of table cell: <input type="number" class="elementsStyle" id="tableCellWidth"> px
+                     </div>
+                     <div>
+                         Enter heigh of table cell: <input type="number" class="elementsStyle" id="tableCellHeight"> px
+                     </div>
+                     <div>
+                         Border width: <input type="number" class="elementsStyle" id="tableBorderWidth" value="1">
+                         Border line type:
+                         <select name="tableBorderStyle" id="tableBorderStyle" class="elementsStyle">
+                             <option value="Solid">Solid</option>
+                             <option value="Dotted">Dotted</option>
+                             <option value="Dashed">Dashed</option>
+                             <option value="Double">Double</option>
+                             <option value="Groove">Groove</option>
+                             <option value="Ridge">Ridge</option>
+                             <option value="Inset">Inset</option>
+                             <option value="Outset">Outset</option>
+                         </select>
+                         Border color: <input type="color" style="border-radius: 7px" id="tableBorderColor">
+                     </div>
+                     <input type="button" value="Create table" class="elementsStyle" id="btnCreateTable">
+                  </div>
+                  <div class="list hiddenForm" id="list">
+                      <div>
+                          Enter number of elements: <input type="number" class="elementsStyle" id="elemsAmount">
+                      </div>
+                      <div>
+                          List type:
+                          <select class="elementsStyle" id="listStyle">
+                              <option value="Circle">Circle</option>
+                              <option value="Disc">Disc</option>
+                              <option value="Square">Square</option>
+                          </select>
+                      </div>
+                      <input type="button" value="Create list" class="elementsStyle" id="btnCreateList">
+                  </div>
+               </form>
+           </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
